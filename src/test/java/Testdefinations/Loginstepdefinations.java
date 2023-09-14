@@ -14,8 +14,8 @@ public class Loginstepdefinations {
 	
 	@Given("^user Launch Chrome Browser$")
 	public void user_launch_chrome_browser() {
-		
-	    driver=new FirefoxDriver();
+		System.setProperty("webdriver.gecko.driver","F:\\testing workspaces\\BDD\\bdd3\\driver\\geckodriver.exe");
+				driver=new FirefoxDriver();
 	    lp=new LoginPage(driver);
 	}
 
